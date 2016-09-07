@@ -1,0 +1,7 @@
+C:\Users\julia\Desktop\Day1.Routes\ExternalControllersLibrary\bin\Debug\ExternalControllersLibrary.dll
+C:\Users\julia\Desktop\Day1.Routes\ExternalControllersLibrary\bin\Debug\ExternalControllersLibrary.pdb
+C:\Users\julia\Desktop\Day1.Routes\ExternalControllersLibrary\bin\Debug\System.Web.Mvc.dll
+C:\Users\julia\Desktop\Day1.Routes\ExternalControllersLibrary\bin\Debug\System.Web.Mvc.xml
+C:\Users\julia\Desktop\Day1.Routes\ExternalControllersLibrary\obj\Debug\ExternalControllersLibrary.csprojResolveAssemblyReference.cache
+C:\Users\julia\Desktop\Day1.Routes\ExternalControllersLibrary\obj\Debug\ExternalControllersLibrary.dll
+C:\Users\julia\Desktop\Day1.Routes\ExternalControllersLibrary\obj\Debug\ExternalControllersLibrary.pdb
