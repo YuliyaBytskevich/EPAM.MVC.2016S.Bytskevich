@@ -1,0 +1,14 @@
+﻿@model Day3.HW.Fractions.Models.Person
+
+@{
+    ViewBag.Title = "Person";
+}
+
+@{Html.RenderAction("Header", "Home", new {side = Model.Side.ToString()}); }
+
+<h2>Personal info:</h2>
+<h4>Name: @Model.Name</h4>
+<h4>Lastname: @Model.LastName</h4>
+<br/>
+
+

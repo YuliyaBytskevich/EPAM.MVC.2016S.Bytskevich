@@ -1,0 +1,6 @@
+﻿@model String
+
+<br/>
+<img src="@(Model == "Light" ? Url.Content("~/Content/light.png") : Url.Content("~/Content/dark.png"))" />
+<h1>Fraction: @Model</h1>
+<hr />
