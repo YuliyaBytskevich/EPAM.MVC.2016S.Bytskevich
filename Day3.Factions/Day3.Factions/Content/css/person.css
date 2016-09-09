@@ -1,0 +1,33 @@
+﻿.person-header {
+    margin-top: 20px;
+    height: 120px;
+}
+
+.person-header .centered-50 img {
+    float: left;
+    overflow: hidden;
+}
+
+.neutral-field {
+    background-color: #c2d1f0;
+}
+
+.neutral-menu {
+    background-color: #0f1f3d;
+}
+
+.light-field {
+    background-color: #ffffe6;
+}
+
+.light-menu {
+    background-color: #ffffb3;
+}
+
+.dark-field {
+    background-color: #a6a6a6;
+}
+
+.dark-menu {
+    background-color: #404040;
+}

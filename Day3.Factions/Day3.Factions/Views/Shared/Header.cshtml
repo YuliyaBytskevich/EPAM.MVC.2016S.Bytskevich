@@ -1,0 +1,8 @@
+﻿@model String
+
+<div class="person-header">
+    <div class="centered-50">
+        <img src="@(Model == "Light" ? Url.Content("~/Content/imgs/light.png") : Url.Content("~/Content/imgs/dark.png"))"/>
+        <h1>Faction: @Model</h1>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+﻿@using Day3.Factions.Models
+@model Day3.Factions.Models.Person
+
+<div class="centered-50">
+    <h5>Do you want to change side?</h5>
+    @if (Model.Side == Side.Light)
+    {
+        @Html.ActionLink("Yes", "AcceptToChangeFaction", new {id = Model.Id})
+    }
+    else
+    {
+        <a href="javascript:PopUpShow('#acceptPopup')">Yes</a>
+    }
+    <a href="javascript:PopUpShow('#declinePopup')">No</a>
+    <hr/>
+</div>
+
+<div class="b-popup" id="declinePopup">
+    <div class="b-popup-content">
+        That's right, sweety! Stay your side! ^_^
+        <br/>
+        <br/>
+        <a href="javascript:PopUpHide('#declinePopup')">OK</a>
+    </div>
+</div>
+
+<div class="b-popup" id="acceptPopup">
+    <div class="b-popup-content">
+        LOL. There is no way out!<br />
+        P.S. Your HR department has been contacted. <br />
+        <a href="javascript:PopUpHide('#acceptPopup')">OK :(</a>
+    </div>
+</div>

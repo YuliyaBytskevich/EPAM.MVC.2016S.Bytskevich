@@ -1,0 +1,30 @@
+﻿@model Day3.Factions.Models.Person
+
+@{
+    ViewBag.Title = "Person";
+}
+
+@section Header 
+{
+    @{Html.RenderAction("Header", "Home", new { side = Model.Side.ToString() }); }
+}
+
+@section Body 
+{
+    <div class="centered-50">
+        <hr />
+        <h2>Personal info:</h2>
+        <h4>Name: @Model.Name</h4>
+        <h4>Lastname: @Model.LastName</h4>
+        <hr/>
+    </div>
+}
+
+@section Footer
+{
+    <footer>
+        @{ Html.RenderAction("ChangeSide", "Home", new { person = Model }); }
+    </footer>
+}
+
+
