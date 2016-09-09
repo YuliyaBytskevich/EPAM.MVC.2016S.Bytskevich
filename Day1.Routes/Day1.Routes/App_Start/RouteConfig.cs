@@ -22,13 +22,12 @@ namespace Day1.Routes
                 namespaces: new[] { "ExternalControllersLibrary" }
             );
 
-            // route with regex, http method, compound route constraint
+            // route with regex, compound route constraint
             routes.MapRoute(
                name: "WithCompoundRouteConstraint",
                url: "{controller}/{action}/{id}",
                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
                constraints: new { controller = @"^H\S*" ,
-                                  httpMethod = new HttpMethodConstraint("GET"),
                                   id = new CompoundRouteConstraint(new IRouteConstraint[]
                                   {
                                       new IntRouteConstraint(), 
@@ -37,13 +36,12 @@ namespace Day1.Routes
                namespaces: new[] { "Day1.Routes.Controllers" }
             );
 
-            // route with regex, http method, compound route constraint and custom namespace (1) 
+            // route with regex, compound route constraint and custom namespace (1) 
             routes.MapRoute(
                name: "WithCompoundRouteConstraintAndCustomNamespace",
                url: "{controller}/{action}/{id}",
                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
                constraints: new { controller = @"^H\S*",
-                                  httpMethod = new HttpMethodConstraint("GET"),
                                   id = new CompoundRouteConstraint(new IRouteConstraint[]
                                   {
                                       new IntRouteConstraint(),

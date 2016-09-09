@@ -110,10 +110,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MSpecTests\BaseTest.cs" />
+    <Compile Include="MSpecTests\When_url_has_External_prefix_and_no_controller_and_no_action.cs" />
+    <Compile Include="MSpecTests\When_url_is_Home_Index_and_id_is_two_thousands_one.cs" />
     <Compile Include="MSpecTests\TestHelper.cs" />
     <Compile Include="MSpecTests\When_no_url_is_entered.cs" />
     <Compile Include="MSpecTests\When_url_is_Home_Index_and_id_is_five.cs" />
+    <Compile Include="MSpecTests\When_url_is_Home_Index_and_id_is_one_thousand.cs" />
+    <Compile Include="MSpecTests\When_url_is_Home_Index_and_id_is_one_thousand_one.cs" />
     <Compile Include="MSpecTests\When_url_is_Home_Index_and_id_is_string.cs" />
+    <Compile Include="MSpecTests\When_url_is_Home_Index_and_id_is_two_thousands.cs" />
     <Compile Include="MSpecTests\When_url_is_Home_Index_and_id_is_zero.cs" />
     <Compile Include="MSpecTests\When_url_is_Home_Sum_and_no_parameters_given.cs" />
     <Compile Include="MSpecTests\When_url_is_Home_Sum_and_parameters_are_decimal.cs" />
